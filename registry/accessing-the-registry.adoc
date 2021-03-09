@@ -48,9 +48,12 @@ include::modules/registry-checking-the-status-of-registry-pods.adoc[leveloffset=
 include::modules/registry-viewing-logs.adoc[leveloffset=+1]
 
 include::modules/registry-accessing-metrics.adoc[leveloffset=+1]
+endif::[]
 
 .Additional resources
 
+* For more information on allowing pods to reference images across projects, see xref:../openshift_images/managing_images/using-image-pull-secrets.adoc#images-allow-pods-to-reference-images-across-projects_using-image-pull-secrets[Allowing pods to reference images across projects].
+ifdef::openshift-enterprise,openshift-webscale,openshift-origin[]
 * A `kubeadmin` can access the registry until deleted. See
 xref:../authentication/remove-kubeadmin.adoc[Removing the kubeadmin user] for
 more information.
